@@ -1,0 +1,30 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Notebook 1",
+      "preco": "2000"
+    },
+    {
+      "id": "2",
+      "nome": "Notebook 2",
+      "preco": "3000"
+    },
+    {
+      "id": "3",
+      "nome": "Notebook 3",
+      "preco": "5000"
+    },
+    {
+      "nome": "Mouse",
+      "preco": 900,
+      "desconto": 10,
+      "id": "4"
+    },
+    {
+      "nome": "Mesa",
+      "preco": "500",
+      "id": "5"
+    }
+  ]
+}
