@@ -49,4 +49,13 @@ this.listarPessoas();
     }, 1000);
     
     }
+
+    alterar = (id:any) =>{
+ 
+      this.router.navigate(['/pessoa',id])
+      
+        
+      
+      
+      }
 }

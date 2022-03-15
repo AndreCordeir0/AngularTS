@@ -1,0 +1,19 @@
+<div>
+
+    <label for="nome" class="form-label" >Nome</label>
+    <input class="form-control" name="nome" [(ngModel)]="pessoa.nome">
+   
+    <label for="login" class="form-label">Login</label>
+    <input class="form-control"  name="login" id="login"  [(ngModel)]="pessoa.login">
+   
+    <label for="email" class="form-label" >Email</label>
+    <input class="form-control" name="email" [(ngModel)]="pessoa.email">
+   
+    <label for="senha" class="form-label">Senha</label>
+    <input class="form-control" type="password"  name="senha" id="senha"  [(ngModel)]="pessoa.senha">
+    
+    <label for="dtn" class="form-label">Data d. Nasc.</label>
+    <input class="form-control" type="date" name="dtn" id="dtn"  [(ngModel)]="pessoa.dataDeNascimento">
+   
+    <button type="button" class="btn btn-success" [routerLink]="['/pessoa']" (click)="alterar()">Editar</button>
+</div>

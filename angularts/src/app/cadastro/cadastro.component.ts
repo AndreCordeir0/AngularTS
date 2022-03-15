@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router,ActivatedRoute } from '@angular/router';
 import { Pessoa } from '../Objetos/Pessoa';
 import { PessoaService } from '../service/pessoa.service';
-
+import { Validators, FormBuilder, FormGroup, FormControl, FormArray } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @Component({
@@ -14,7 +15,7 @@ import { PessoaService } from '../service/pessoa.service';
 export class CadastroComponent implements OnInit {
 
 pessoa :Pessoa = new Pessoa()
-
+name = new FormControl('');
   constructor(
     private route :ActivatedRoute,
     private router:Router,

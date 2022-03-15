@@ -20,7 +20,7 @@
           <td *ngIf="pessoa.dataDeNascimento != null;else pessoaNull">{{pessoa.dataDeNascimento| date:'dd/MM/YYYY'}}</td>
           <ng-template #pessoaNull><td class="text-center"><div class="badge bg-info">Não Informado</div></td></ng-template>
           <td>  <button type="button" class="btn btn-danger" (click)="excluir(pessoa.id)">Excluir</button>
-          <td>  <button type="button" class="btn btn-primary" >Editar</button>
+          <td>  <button type="button" class="btn btn-primary" (click)="alterar(pessoa.id)" >Editar</button>
           </td>
         </tr>
       </tbody>
